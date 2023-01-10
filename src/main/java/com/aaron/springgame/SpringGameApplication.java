@@ -1,7 +1,7 @@
 package com.aaron.springgame;
 
 import com.aaron.springgame.game.GameRunner;
-import com.aaron.springgame.game.MarioGame;
+import com.aaron.springgame.game.PacmanGame;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -10,9 +10,10 @@ public class SpringGameApplication {
 
 	public static void main(String[] args) {
 
-		var marioGame = new MarioGame();
+//		var marioGame = new MarioGame();
 //		var superContraGame = new SuperContraGame();
-		var gameRunner = new GameRunner(marioGame);
+		var pacmanGame = new PacmanGame();
+		var gameRunner = new GameRunner(pacmanGame);
 		gameRunner.run();
 
 		SpringApplication.run(SpringGameApplication.class, args);
