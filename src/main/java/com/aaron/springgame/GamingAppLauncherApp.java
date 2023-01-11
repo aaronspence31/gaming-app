@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan("com.aaron.springgame.game")
-public class App03GamingSpringBeans {
+public class GamingAppLauncherApp {
     public static void main(String[] args) {
 
-        try(var context = new AnnotationConfigApplicationContext(App03GamingSpringBeans.class)){
+        try(var context = new AnnotationConfigApplicationContext(GamingAppLauncherApp.class)){
             context.getBean(GamingConsole.class).up();
             context.getBean(GameRunner.class).run();
         }
