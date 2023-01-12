@@ -9,7 +9,6 @@ public class BusinessCalculationService {
     DataService dataService;
 
     public BusinessCalculationService(DataService dataService){
-        super();
         this.dataService = dataService;
     }
     public int findMax() {
